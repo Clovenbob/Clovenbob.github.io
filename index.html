@@ -1,14 +1,281 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Google For Contest: HTML</title></head><style> #abouttext{position:absolute;left:19px;top:101px;color:rgb(255,255,255)}#rotate{transform:rotate(29deg);position:absolute;left:220px;top:156px;z-index:10}#google{position:absolute;left:188px;top:155px;z-index:1}#textinput{width:396px;position:absolute;left:103px;top:245px}#signinbutton{position:absolute;left:528px;top:-12px;background-color:blue;border:2px solid rgb(0,0,0);color:black}#images{position:absolute;left:480px;top:-10px;color:black}#gmail{position:absolute;left:434px;top:-10px;color:black}#googlesearch{position:absolute;left:195px;top:268px;background-color:rgb(77,77,77);border:6px solid rgb(77,77,77);color:black}#googledoodles{position:absolute;left:313px;top:268px;background-color:rgb(77,77,77);border:6px solid rgb(77,77,77);color:black}#about{position:absolute;left:9px;top:-10px;color:black}#store{position:absolute;left:58px;top:-10px;color:black}#goi{position:absolute;left:214px;top:309px}#ffff{position:absolute;left:321px;top:309px;color:blue}</style><body><div id = "HIDETHIS"><div><h5 id = "images">Images</h5></div><div><h4 id  = "signinbutton">Sign In</h4></div><div><h5 id = "gmail">Gmail</h5></div><div><h5 id = "googlesearch">Google Search</h5></div><div><h5 id = "googledoodles">I'm Feeling Lucky</h5></div><div><h5 id = "about">About</h5></div><div><h5 id = "store">Store</h5></div><div><h5 id = "goi">Google offered in:</h5><h5 id = "ffff">Français</h5></div><div><h1 id = "rotate">Clovenbob's</h1></div><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" width ="244" id = "google"><div id = "thing"><input type = "text" id = "textinput"></div></div><script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script>
-$("#textinput").keypress(function(){if(event.key=="Enter"){var searchTerms = $("#textinput").val();var SearchUrl = "https://www.google.com/search?q=" + searchTerms
-window.open(SearchUrl);}})
-$("#signinbutton").on("click", function(){window.open("https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fgws_rd%3Dssl&flowName=GlifWebSignIn&flowEntry=ServiceLogin");});$("#gmail").on("click", function(){window.open("https://gmail.com");});$("#images").on("click", function(){window.open("https://www.google.ca/imghp?hl=en&tab=wi&ogbl&safe=active")})
-$("#store").on("click", function(){window.open("https://store.google.com/CA/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA")})
-$("#about").on("click", function(){$("#HIDETHIS").hide();$("body").append(" <style>body{background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Trefoil_knot_conways_game_of_life.gif/220px-Trefoil_knot_conways_game_of_life.gif);background-attachment:fixed;background-size:99%;font-size:25px;text-align:center;color:white}</style><h3 id=abouttext>I started programing on KA on May 8th, 2020 I have finshed 100% of Intro to JS, 100% of Intro to HTML/CSS: Making webpages and 30% of HTML/Jquery I like video games, food, sleep and programing. I also like red pandas and yoyo-ing.</h3>");})
-$("#googlesearch").on("click", function(){var searchTerms = $("#textinput").val();var SearchUrl = "https://www.google.com/search?q=" + searchTerms
-window.open(SearchUrl);})
-$("#googledoodles").on("click", function(){window.open("https://www.google.com/doodles")})
-$("#ffff").on("click", function(){$("#ffff").text("English");$("#googlesearch").text("recherche google")
+<!DOCTYPE html>
+<html><!--
+
+Notes: Press Enter or Google search To Search. Taping On any of the buttons will take you to a google site NOT RUN BY KHAN ACADEMY
+
+--><head>
+        <meta charset="utf-8">
+        <title>Google</title>
+    </head>
+    <style>
+    
+    
+    #button{
+    position: absolute;
+  left: 448px;
+  top: 306px;
+  background-color: rgb(0, 217, 255);
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
+    }
+    
+ 
+     
+    #username{
+    position: absolute;
+  left: 200px;
+  top: 100px;
+    }
+    
+    #password{
+    position: absolute;
+  left: 200px;
+  top: 155px;
+    }
+    
+    #signininput{
+    position: absolute;
+  left: 200px;
+  top: 200px;
+   width: 150px;
+    }
+    
+    #signininput2{
+    position: absolute;
+    left: 200px;
+  top: 150px;
+   width: 150px;
+  }
+  
+    #ImageStyle{
+        position: absolute;
+  left: 394px;
+  top: 202px;
+    color: rgb(15, 247, 255);
+    }
+    
+    #abouttext {
+    position: absolute;
+  left: 19px;
+  top: 101px;
+  color: rgb(255, 255, 255);
+    }
+    
+    #rotate {
+    transform: rotate(29deg);
+      position: absolute;
+  left: 220px;
+  top: 156px;
+  z-index: 10;
+    }
+    
+    #google {
+  position: absolute;
+  left: 188px;
+  top: 155px;
+  z-index: 1;
+    }
+    
+    #textinput {
+    width: 396px;
+    position: absolute;
+  left: 103px;
+  top: 245px;
+    }
+    
+    #signinbutton {
+    position: absolute;
+  left: 528px;
+  top: -12px;
+  background-color: rgb(0, 217, 255);
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
+    }
+    
+    #images {
+    position: absolute;
+  left: 480px;
+  top: -10px;
+  color: black;
+    }
+    
+    #gmail {
+    position: absolute;
+  left: 434px;
+  top: -10px;
+  color: black;
+    }
+    
+    #googlesearch {
+    position: absolute;
+  left: 195px;
+  top: 268px;
+  background-color: rgb(77, 77, 77);
+  border: 6px solid rgb(77, 77, 77);
+  color: black;
+    }
+    
+    #googledoodles {
+    position: absolute;
+  left: 313px;
+  top: 268px;
+  background-color: rgb(77, 77, 77);
+  border: 6px solid rgb(77, 77, 77);
+  color: black;
+    }
+    
+    #about {
+    position: absolute;
+  left: 9px;
+  top: -10px;
+  color:black;
+}
+
+#store {
+    position: absolute;
+  left: 58px;
+  top: -10px;
+  color:black;
+}
+
+#goi {
+    position: absolute;
+  left: 214px;
+  top: 309px;
+}
+
+#ffff {
+ position: absolute;
+  left: 321px;
+  top: 309px;
+  color: blue;
+}
+
+    </style>
+    
+    <body>
+    
+<div>
+
+<!--Hides everything when you press a button-->
+
+<div id = "HIDETHIS">
+
+<div>
+
+<!--text and stuff-->
+
+<h5 id = "images">Images</h5>
+
+</div>
+
+<div>
+
+<h4 id  = "signinbutton">Sign In</h4>
+
+</div>
+
+<div>
+
+<h5 id = "gmail">Gmail</h5>
+
+</div>
+
+<div>
+
+<h5 id = "googlesearch">Google Search</h5>
+
+</div>
+
+<div>
+
+<h5 id = "googledoodles">I'm Feeling Lucky</h5>
+
+</div>
+
+<div>
+
+<h5 id = "about">About</h5>
+
+</div>
+
+<div>
+
+<h5 id = "store">Store</h5>
+
+</div>
+
+<div>
+
+<h5 id = "goi">Google offered in:</h5>
+
+<h5 id = "ffff">Français</h5>
+
+</div>
+
+<div>
+
+<h1 id = "rotate">Clovenbob's</h1>
+
+</div>
+
+<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" width ="244" id = "google">
+<div id = "thing">
+<input type = "text" id = "textinput">
+</div>
+</div>
+</div>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+</script>
+<script>
+$("#textinput").keypress(function(){
+if (event.key == "Enter") {
+var searchTerms = $("#textinput").val();
+var SearchUrl = "https://www.google.com/search?q=" + searchTerms
+window.open(SearchUrl);
+}})
+  $("#signinbutton").on("click", function() {
+$("#HIDETHIS").hide();
+$("body").append("<h3 id = username>Username</h3><h3 id = password>Password</h3><input type = text id = signininput><input type = text id = signininput2><h1 id = button>Enter</h1>")
+$("#button").on("click", function(){
+$("body").hide();
+var passwordgetter = $("#password").val();
+
+})
+  });
+$("#gmail").on("click", function() {
+$("#HIDETHIS").hide();
+$("body").append("<style>body {background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Gmail_Icon.svg/1280px-Gmail_Icon.svg.png); background-attachment:fixed; background-size:100%;}</style>")
+});
+$("#images").on("click", function(){
+$("body").append("<h4 id = ImageStyle>Images</h4>")
+})
+$("#store").on("click", function(){
+$("#HIDETHIS").hide();
+$("body").append("<style>body {background:url(https://www.khanacademy.org/computer-programming/spin-off-of-project-ad-design/5360145140695040/6525824497762304.png); background-attachment:fixed; background-size:26%;}</style>")
+})
+$("#about").on("click", function(){
+$("#HIDETHIS").hide();
+$("body").append(" <style>body {background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Trefoil_knot_conways_game_of_life.gif/220px-Trefoil_knot_conways_game_of_life.gif); background-attachment:fixed; background-size:99%; font-size: 25px; text-align: center; color: white;}</style><h3 id = abouttext>I started programing on KA on May 8th, 2020 I have finshed 100% of Intro to JS, 100% of Intro to HTML/CSS: Making webpages and 30% of HTML/Jquery I like video games, food, sleep and programing. I also like red pandas and yoyo-ing.</h3>");})
+$("#googlesearch").on("click", function(){
+var searchTerms = $("#textinput").val();
+var SearchUrl = "https://www.google.com/search?q=" + searchTerms
+window.open(SearchUrl);
+})
+$("#googledoodles").on("click", function(){
+var searchTerms = $("#textinput").val();
+var SearchUrl = "https://www.google.com/search?q=" + searchTerms
+window.open(SearchUrl);
+})
+$("#ffff").on("click", function(){
+$("#ffff").text("English");
+$("#googlesearch").text("recherche google")
 $("#googledoodles").text("Je me sens chanceux")
 $("#about").text("Sur")
 $("#store").text("boutique")
-$("#signinbutton").text("Conexion")})</script></body></html>
+$("#signinbutton").text("Conexion")
+})
+
+</script>
+    </body>
+</html>
