@@ -1,352 +1,755 @@
-<!DOCTYPE html><html><!--                                                                                                             Info: I have been programming for 3 months and I would like to be placed in the intermediate bracket.                                                                                                 Notes: Press Enter or Google search To Search. Taping On any of the buttons will take you to a google site NOT RUN BY KHAN ACADEMY                                                                                     
---><head>
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
         <meta charset="utf-8">
-        <title>Clovenbob's google</title>
+        
+        <title>Clovenbob's Homepage & Subpage</title>
+        
+<!--If your URL starts with https://khan-academy.appspot.com please make it                                                 https://www.khanacademy.org/computer-programming/clovenbobs-homepage-subpage/6646797457833984-->
+        
+        <style>
+        .aaaa{
+        color: rgb(255, 255, 255);
+        }
+       #home{
+       background-image: url("https://www.khanacademy.org/computer-programming/ultumus-mecha/5380715388682240/5786654759534592.png");
+       
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       height: 328px;
+       }
+       #about {
+       background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/00/Red_panda_national_zoo.jpg");
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       height: 328px;
+       }
+        .Program{
+        float: left;
+        padding: 8px;
+        height: 210px;
+        width: 170px;
+        }
+        .Program img{
+        width: 170px;
+        height: 170px;
+        
+        }
+        
+      img:hover {
+  transform: scale(1.1);
+}
+       .abc
+       {
+        color:rgb(0, 0, 0);
+        }
+        
+            body
+            {
+                font-family: Comic Sans MS;
+                
+                background-color: rgb(255, 255, 255);
+                
+                margin: 0;
+                
+                font-size: 16px;
+            }
+            
+            header
+            {
+                background-color: rgb(51, 51, 51);
+                
+                position: -webkit-sticky; 
+                
+                position: sticky;
+                
+                top: 0;
+                
+                z-index: 10;
+            }
+            
+            header nav ul 
+            {
+                list-style-type: none;
+                
+                margin: 0;
+                
+                padding: 0;
+                
+                overflow: hidden;
+            }
+            
+
+            
+            header nav li 
+            {
+                float: left;
+            }
+            
+            header nav li a 
+            {
+                display: block;
+                
+                color: white;
+                
+                text-align: center;
+                
+                padding: 14px 16px;
+                
+                text-decoration: none;
+            }
+            
+            header nav li a:hover 
+            {
+                background-color: rgb(255, 0, 0);
+            }
+            
+        
+            header nav li.active 
+            
+            {
+                background-color: rgb(22, 98, 184);
+            }
+            
+            .page {
+                padding: 0 10px;
+                
+                text-align: left;
+        
+                -webkit-animation: fadeIn 3s ease forwards;
+                
+                   -moz-animation: fadeIn 3s ease forwards;
+                   
+                     -o-animation: fadeIn 3s ease forwards;
+                     
+                        animation: fadeIn 3s ease forwards;
+            }
+            
+            @-webkit-keyframes fadeIn 
+            
+            {
+                from { opacity: 0; }
+                
+                to   { opacity: 1; }
+            }
+            
+               @-moz-keyframes fadeIn 
+               
+                {
+                from { opacity: 0; }
+                
+                to   { opacity: 1; }
+                 }
+               
+                 @-o-keyframes fadeIn 
+                 
+                 {
+                from { opacity: 0; }
+                
+                to   { opacity: 1; }
+                 }
+                    @keyframes fadeIn
+                    {
+                from { opacity: 0; }
+                
+                to   { opacity: 1; }
+                
+            }
+            
+        </style>
+        
     </head>
-    <style>
-    
-    
-    #button{
-    position: absolute;
-  left: 448px;
-  top: 306px;
-  background-color: rgb(0, 217, 255);
-  border: 2px solid rgb(0, 0, 0);
-  color: black;
-    }
-    
- 
-     
-    #username{
-    position: absolute;
-  left: 200px;
-  top: 100px;
-    }
-    
-    #password{
-    position: absolute;
-  left: 200px;
-  top: 155px;
-    }
-    
-    #signininput{
-    position: absolute;
-  left: 200px;
-  top: 200px;
-   width: 150px;
-    }
-    
-    #signininput2{
-    position: absolute;
-    left: 200px;
-  top: 150px;
-   width: 150px;
-  }
-  
-    #ImageStyle{
-        position: absolute;
-  left: 394px;
-  top: 202px;
-    color: rgb(15, 247, 255);
-    }
-    
-    #abouttext {
-    position: absolute;
-  left: 19px;
-  top: 101px;
-  color: rgb(255, 255, 255);
-    }
-    
-    #rotate {
-    transform: rotate(29deg);
-      position: absolute;
-  left: 220px;
-  top: 156px;
-  z-index: 10;
-    }
-    
-    #google {
-  position: absolute;
-  left: 188px;
-  top: 155px;
-  z-index: 1;
-    }
-    
-    #textinput {
-    width: 396px;
-    position: absolute;
-  left: 103px;
-  top: 245px;
-    }
-    
-    #signinbutton {
-    position: absolute;
-  left: 528px;
-  top: -12px;
-  background-color: rgb(0, 217, 255);
-  border: 2px solid rgb(0, 0, 0);
-  color: black;
-    }
-    
-    #images {
-    position: absolute;
-  left: 480px;
-  top: -10px;
-  color: black;
-    }
-    
-    #gmail {
-    position: absolute;
-  left: 434px;
-  top: -10px;
-  color: black;
-    }
-    
-    #googlesearch {
-    position: absolute;
-  left: 195px;
-  top: 268px;
-  background-color: rgb(77, 77, 77);
-  border: 6px solid rgb(77, 77, 77);
-  color: black;
-    }
-    
-    #googledoodles {
-    position: absolute;
-  left: 313px;
-  top: 268px;
-  background-color: rgb(77, 77, 77);
-  border: 6px solid rgb(77, 77, 77);
-  color: black;
-    }
-    
-    #about {
-    position: absolute;
-  left: 9px;
-  top: -10px;
-  color:black;
-}
-
-#store {
-    position: absolute;
-  left: 58px;
-  top: -10px;
-  color:black;
-}
-
-#goi {
-    position: absolute;
-  left: 214px;
-  top: 309px;
-}
-
-#ffff {
- position: absolute;
-  left: 321px;
-  top: 309px;
-  color: blue;
-}
-
-    </style>
     
     <body>
     
-<div>
+        <header>
+        
+            <nav>
+                
+                <ul class="nav">
+                
+                    <li id="homeButton" class="active">
+                    
+                        <a  href="https://www.khanacademy.org" 
+                            onClick="switchPage('#home');return false;" 
+                            title="Home">Home
+                                
+                            </a>
+                            
+                    </li>
+                    
+                    <li id="aboutButton">
+                    
+                        <a  href="https://www.khanacademy.org" 
+                            onClick="switchPage('#about');return false;" 
+                            title="About">About
+                            
+                            </a>
+                            
+                    </li>
+                    
+                    <li id="HowButton">
+                    
+                        <a  href="https://www.khanacademy.org" 
+                            onClick="switchPage('#How');return false;" 
+                            title="how">How</a>
+                            
+                    </li>
+                    
+                    <li id="ProgramsButton" class="active">
+                    
+                        <a  href="https://www.khanacademy.org" 
+                            onClick="switchPage('#Programs');return false;" 
+                            title="Programs">Programs
+                                
+                            </a>
+                            
+                    </li>
+                    
+                    <li id="PixelArtButton">
+                    
+                        <a  href="https://www.khanacademy.org" 
+                            onClick="switchPage('#PixelArt');return false;" 
+                            title="PixelArt">Pixel Art</a>
+                            
+                    </li>
+                    
+                </ul>
+                
+            </nav>
+            
+        </header>
+        
+        <main>
+           
+            <div id="home" class="page">
+            
+                <h1>
+                
+                Clovenbob's Homepage & Subpage
+                
+                </h1>
+                
+                <p>
+                
+                Here You can sub to me and see my programs
+                    
+                </p>
+            
+                
+            </div>
+            
+            <div id="about" class="page">
+            
+                <h1 class = "aaaa">
+                
+                About
+                    
+                </h1>
+                
+                <p class="aaaa">
+                
+                I started programing on KA on May 8th, 2020 I have finshed 100% of Intro to JS, 100% of Intro to HTML/CSS: Making webpages and  30% of HTML/JS: Making webpages interactive with jQuery. I like video games, food, sleep and programing. I also like red pandas and yoyo-ing.
+                    
+                </p>
 
-<!--Hides everything when you press a button-->
+            </div> 
+            
+            <div id="How" class="page">
+            
+                <p>
+                
+                <h1>
+                
+                How To Sub
+                    
+                </h1>
 
-<div id = "HIDETHIS">
+<p class="abc">
 
-<div>
+Just Post A "<strong>.</strong>" Or anything else less then three chacters In the <b>Sub Thread</b> and you will be notified when I release a new program! Do NOT post anything more than three chacters in the sub thread or: </p>
 
-<!--text and stuff-->
+<ol>
 
-<h5 id = "images">Images</h5>
-
-</div>
-
-<div>
-
-<h4 id  = "signinbutton">Sign In</h4>
-
-</div>
-
-<div>
-
-<h5 id = "gmail">Gmail</h5>
-
-</div>
-
-<div>
-
-<h5 id = "googlesearch">Google Search</h5>
-
-</div>
-
-<div>
-
-<h5 id = "googledoodles">I'm Feeling Lucky</h5>
-
-</div>
-
-<div>
-
-<h5 id = "about">About</h5>
-
-</div>
-
-<div>
-
-<h5 id = "store">Store</h5>
-
-</div>
-
-<div>
-
-<h5 id = "goi">Google offered in:</h5>
-
-<h5 id = "ffff">Français</h5>
-
-</div>
-
-<div>
-
-<h1 id = "rotate">Clovenbob's</h1>
-
-</div>
-
-<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" width ="244" id = "google">
-
-<div id = "thing">
-
-<!--The Google search Input-->
-
-<input type = "text" id = "textinput">
-
-</div>
-
-</div>
-
-</div>
-
-<!--Calls The Jquery Libery-->
-
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
-
-</script>
-
-<script>
-
-//All Of The Java Script
-
-$("#textinput").keypress(function(){
-if (event.key == "Enter") {
-var searchTerms = $("#textinput").val();
-var SearchUrl = "https://www.google.com/search?q=" + searchTerms
-window.open(SearchUrl);
-}})
-
-  $("#signinbutton").on("click", function() {
-      
-$("#HIDETHIS").hide();
-
-$("body").append("<h3 id = username>Username</h3><h3 id = password>Password</h3><input type = text id = signininput><input type = text id = signininput2><h1 id = button>Enter</h1>")
-
-$("#button").on("click", function(){
+<li class="abc">It will spam the subbers
     
-$("body").hide();
+</li>
 
-var passwordgetter = $("#password").val();
+<li class="abc">You will get flagged
+    
+</li>
 
-})
+</ol>
 
-  });
+            </div>
+            
+        <div id="Programs" class="page">
+        
+                <p>
+                
+                <h1>
+                
+                Programs
+                    
+                </h1>
+
+<div class="Table">
+
+<div class="Program">
+                    <a href="https://www.khanacademy.org/computer-programming/the-not-so-simple-platformer/4661220533485568" class= "abc">
+
+<img src="https://www.khanacademy.org/computer-programming/the-not-so-simple-platformer/4661220533485568/5932770381414400.png"   alt="See line 11">
+
+<p>
+
+The Not So slimple <br> Platformer
+    
+</p>
+
+</a>
+
+</div>
+
+                   
+                    <div class="Program">
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/nintendo-switch/5241886135435264" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/nintendo-switch/5241886135435264/6334923947261952.png"  alt="See line 11">
+
+<p>
+
+Nintendo Switch
+    
+</p>
+
+</a>
+
+</div>
+
+
+                 <div class="Program"> 
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/an-insane-platformer/5169670152667136" class="abc">
+                    
+<img src="https://www.khanacademy.org/computer-programming/an-insane-platformer/5169670152667136/6616878274199552.png"  alt="See line 11">
+
+<p>
+
+An INSANE Platformer
+    
+</p>
+
+</a>
+
+</div>
+           
+                
+              
+                    <div class="Program">
+                    
+<a href="https://www.khanacademy.org/computer-programming/what-im-doing-at-home/6328252319547392" class="abc">
+
+<img src ="https://www.khanacademy.org/computer-programming/what-im-doing-at-home/6328252319547392/6524769802272768.png" alt="See line 11">
+
+<p>
+
+What I'm Doing at <br>home
+    
+</p>
+
+</a>
+
+</div>
+
+            
+                    <div class="Program">
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/button-wip/6503252726005760" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/button/6503252726005760/6103621735170048.png" alt="See line 11">
+
+<p>
+
+A Button
+    
+</p>
+    
+</a>
+            </div>
+<div class="Program">
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/thing/5310999898963968" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/how-to-make-a-gallery-using-hdml/5310999898963968/5081279412387840.png" alt="See line 11">
+
+<p>
+
+How to make a gallery Using HDML
+    
+</p>
+    
+</a>
+            </div>
+<div class="Program">
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/the-coding-olympics-avatar-contest-ultumus-wip/5791718916046848" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/the-coding-olympics-avatar-contest-ultumus-wip/5791718916046848/6095339260035072.png" alt="See line 11">
+
+<p>
+
+The Coding Olympics Avatar Contest: Ultumus
+
+    
+</p>
+    
+</a>
+            </div>
+            <div class="Program">
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/my-new-logo/4613075925811200" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/my-new-logo/4613075925811200/5284394936909824.png"  alt="See line 11">
+
+<p>
+
+My New Logo
+    
+</p>
+
+</a>
+
+</div>
+<div class="Program">
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/google-wip/4615301435047936" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/google-wip/4615301435047936/5061446598737920.png"  alt="See line 11">
+
+<p>
+
+Google Search
+    
+</p>
+
+</a>
+
+</div>
+            
+            </div>
+            
+            </div> 
+            
+            
+        <div id="PixelArt" class="page">
+            
+        <h1>Pixel Art</h1>
+            
   
-$("#gmail").on("click", function() {
+<div class="Table">
+
+<div class="Program">
+
+                    <a href="https://www.khanacademy.org/computer-programming/pikachu-pixel-art/5512157468704768" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/pikachu-pixel-art/5512157468704768/5157498218496000.png"  alt="See line 11">
+
+<p>
+
+Pikachu Pixel Art
     
-$("#HIDETHIS").hide();
-
-$("body").append("<style>body {background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Gmail_Icon.svg/1280px-Gmail_Icon.svg.png); background-attachment:fixed; background-size:100%;}</style>")
-
-});
-
-$("#images").on("click", function(){
+</p>
     
-$("body").append("<h4 id = ImageStyle>Images</h4>")
-
-})
-
-$("#store").on("click", function(){
+</a>
     
-$("#HIDETHIS").hide();
+</div>
 
-$("body").append("<style>body {background:url(https://www.khanacademy.org/computer-programming/spin-off-of-project-ad-design/5360145140695040/6525824497762304.png); background-attachment:fixed; background-size:26%;}</style>")
+<div class="Program">
+                
+              
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/charmander/4837985042186240" class="abc">
 
-})
+<img src="https://www.khanacademy.org/computer-programming/charmander-pixel-art/4837985042186240/6696382786060288.png"  alt="See line 11">
 
-$("#about").on("click", function(){
+<p>
+
+Charmander Pixel art
     
-$("#HIDETHIS").hide();
+</p>
 
-$("body").append(" <style>body {background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Trefoil_knot_conways_game_of_life.gif/220px-Trefoil_knot_conways_game_of_life.gif); background-attachment:fixed; background-size:99%; font-size: 25px; text-align: center; color: white;}</style><h3 id = abouttext>I started programing on KA on May 8th, 2020 I have finshed 100% of Intro to JS, 100% of Intro to HTML/CSS: Making webpages and 30% of HTML/Jquery I like video games, food, sleep and programing. I also like red pandas and yoyo-ing.</h3>");})
+</a>
 
-$("#googlesearch").on("click", function(){
+</div>
+
+<div class="Program">
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/bulbasaur-pixel-art/4723790390902784" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/bulbasaur-pixel-art/4723790390902784/6163046095273984.png"  alt="See line 11">
+
+<p>
+
+Bulbasaur pixel art
     
-var searchTerms = $("#textinput").val();
+</p>
 
-var SearchUrl = "https://www.google.com/search?q=" + searchTerms
-window.open(SearchUrl);
+</a>
 
-})
+</div>
 
-$("#googledoodles").on("click", function(){
+<div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/squirtle-pixel-art/5575643796226048" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/squirtle-pixel-art/5575643796226048/6662929956880384.png"  alt="See line 11">
+
+<p>
+
+Squirtle Pixel Art
     
-var searchTerms = $("#textinput").val();
+</p>
 
-var SearchUrl = "https://www.google.com/search?q=" + searchTerms
+</a>
 
-window.open(SearchUrl);
+</div> 
 
-})
-var french = function(){
-$("#ffff").text("English");
+<div class="Program">
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/pokeball-pixel-art-20/5125255718649856" class="abc">
 
-$("#googlesearch").text("recherche google")
+<img src="https://www.khanacademy.org/computer-programming/pokeball-pixel-art-20/5125255718649856/6194995908198400.png" alt="See line 11">
 
-$("#googledoodles").text("Je me sens chanceux")
+<p>
 
-$("#about").text("Sur")
+Pokeball Pixel Art 2.0
+    
+</p>
 
-$("#store").text("boutique")
+</a>
+    
+</div>
 
-$("#signinbutton").text("Conexion")
+<div class="Program">
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/snorlax-pixel-art/5951466535534592" class="abc">
 
-}
-var english = function(){
-$("#ffff").text("Français");
+<img src="https://www.khanacademy.org/computer-programming/snorlax-pixel-art/5951466535534592/5903225462865920.png" alt="See line 11">
 
-$("#googlesearch").text("Google Search")
+<p>
 
-$("#googledoodles").text("I'm Feeling Lucky")
+Snorlax Pixel Art
+    
+</p>
 
-$("#about").text("About")
+</a>
 
-$("#store").text("Store")
+</div>
 
-$("#signinbutton").text("Sign In")
-}
+<div class="Program">
 
-//English To French
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/link-pixel-art/5641734675382272" class="abc">
 
-//Only works 6 times or ohnoes will pop up
-$("#ffff").on("click", function(){ french();
-$("#ffff").on("click", function(){english();    
-$("#ffff").on("click", function(){ french();
-$("#ffff").on("click", function(){english();    
-$("#ffff").on("click", function(){ french();    
-$("#ffff").on("click", function(){english();    
-})})})})})})
+<img src="https://www.khanacademy.org/computer-programming/link-pixel-art/5641734675382272/5332727775510528.png"  alt="See line 11">
 
-</script>
+<p>
+
+Link Pixel Art
+    
+</p>
+
+</a>
+
+</div>
+
+<div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/ash-pixel-art/6342535819444224" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/ash-pixel-art/6342535819444224/6288067144859648.png"  alt="See line 11">
+
+<p>
+
+8-bit Ash Pixel art
+    
+</p>
+
+</a>
+
+</div>
+
+<div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/pulipulp-pixel-art/6355612090646528" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/pulipulp-pixel-art/6355612090646528/4914927252684800.png" alt="See line 11">
+
+<p>
+
+Pulipulp Pixel Art
+
+</p>
+
+</a>
+
+</div>
+
+<div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/ash-pixel-art-retro/6164448666337280" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/ash-pixel-art-retro/6164448666337280/5601498712915968.png"  alt="See line 11">
+
+<p>
+
+Ash Pixel Art Retro
+
+</p>
+
+</a>
+
+</div>
+
+<div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/pulipulp-pixel-art-retro/5405187879354368" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/pulipulp-pixel-art-retro/5405187879354368/6531087786196992.png"  alt="See line 11">
+
+<p>
+
+Pulipulp Pixel Art Retro
+
+</p>
+
+</a>
+
+</div>    
+
+<div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/pokeball-pixel-art-retro/5623731443351552" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/pokeball-pixel-art-retro/5623731443351552/6749631350194176.png"  alt="See line 11">
+
+<p>
+
+PokeBall Pixel Art Retro
+
+</p>
+
+</a>
+
+</div>
+
+<div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/charizard-pixel-art/4978581050376192" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/charizard-pixel-art/4978581050376192/5557235283279872.png"  alt="See line 11">
+
+<p>
+
+Charizard Pixel Art
+
+</p>
+
+</a>
+
+</div>
+
+<div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/charizard-pixel-art-retro/6247339555438592" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/charizard-pixel-art-retro/6247339555438592/6213163628249088.png"  alt="See line 11">
+
+<p>
+
+Charizard Pixel Art Retro
+
+</p>
+
+</a>
+
+</div>
+
+<div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/link-pixel-art/4979575218061312" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/link-pixel-art/4979575218061312/4724055332700160.png"  alt="See line 11">
+
+<p>
+
+Link Pixel Art
+
+</p>
+
+</a>
+          
+            </div>
+            <div class="Program">
+
+                    
+                    <a href="https://www.khanacademy.org/computer-programming/hospital-pixel-art/5827172373708800" class="abc">
+
+<img src="https://www.khanacademy.org/computer-programming/hospital-pixel-art/5827172373708800/5559449378963456.png"  alt="See line 11">
+
+<p>
+
+Hospital Pixel Art
+
+
+</p>
+
+</a>
+            </div>
+            
+            </div>
+            
+            </div>
+            
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+            
+        </script>
+        
+        <script>
+
+    		var switchPage = function (page){
+
+    			$(".page").css({ display: "none" });
+ 
+    			$(page).css({ display: "block" });
+    
+    			$('header nav li').removeClass('active');
+
+                $(page+"Button").addClass('active');
+                
+    		};
+    	
+    		switchPage('#home');
+    		
+    	</script>
+    	
     </body>
+    
 </html>
