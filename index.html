@@ -1,396 +1,97 @@
-<!DOCTYPE html><!--
-______________________________________________________________________
-----------------------------------------------------------------------
-TWO PEOPLE FLAGGED THIS!!!!
-WHY??????????
+<!DOCTYPE html>
 
-If (ohnoes pops up) {
-var INGORE_IT!!!! = true
-}
-if (not listed) {
-var Tell_Clovenbob = true
-}
-Width And height not working? go to:
+<html lang="en">
 
-https://www.khanacademy.org/computer-programming/cataegis-homepage/6420786418630656?width=650&height=400
-
-Thanks to Iron programing for the members part!!!
-
-Got Lots of stuff from w3schools
-
-----------------------------------------------------------------------
-______________________________________________________________________
---><html>
     <head>
-        <meta charset="utf-8">
-        <title>Cataegis Homepage</title>
-<meta name="google-site-verification" content="Idq-OF_FuUqZ7HGQQ8xB2cT51UuDg2QQncRThs2qWCY" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
-    <style>
-    #Clovenbob {
-    color: blue;
-    }
- .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-
-    #ch {
-    position: absolute;
-    }
-    #text2 {
-    position: absolute;
-    left: 200px;
-    top: 339px;
-    }
-    #more {
-    position: relative;
-    top: -86px;
-    left: 595px;
-    }
-    .typewriter {
-  color: #fff;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(300, end),
-    /*Or:
-    typing 3.5s steps(30, end),
-    */
-    blink-caret .5s step-end infinite;
-}
-
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-    body{
-    font-family: 'MuseoModerno', cursive, arial, helvetica, impact;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cool-background-random-17506456-1869-1168.jpg/800px-Cool-background-random-17506456-1869-1168.jpg");
-    color: rgb(255, 255, 255);
-    }
-    #rotatething {
-     transform: rotate(20deg);
-    }
-    .ani {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  z-index: 2;
-}
-
-@keyframes example {
-  0%   {left:0px; top:0px;}
-  50% {left:356px; top:0px;}
-100% {left:0px; top:0px;}
-  
-}
-    #why {
-    z-index: -1;
-    }
-       .spin-container {
-        text-align: center;
-        margin-top: 100px;
     
-      }
-      .spin {
-        border: 3px solid #0D4B9F;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        position: absolute;
-        top: 95px;
-        left: 211px;
-        border-radius: 50%;
-        border-left-color: transparent;
-        border-right-color: transparent;
-        animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
-      }
-      .spin2 {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        position: absolute;
-        top: 95px;
-        left: 211px;
-        border-radius: 50%;
-        border-left-color: transparent;
-        border-right-color: transparent;
-        animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
-      }
-      #loader {
-        position: absolute;
-        top: 90px;
-        border-left-color: transparent;
-        border-right-color: transparent;
-        animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
-      }
-      #loader2 {
-        border: 3px solid #E0EDFF;
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        top: 90px;
-        border-left-color: transparent;
-        border-right-color: transparent;
-        animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
-      }
-      #loader3 {
-        border: 3px solid #005CDC;
-        width: 240px;
-        height: 240px;
-        position: absolute;
-        top: 75px;
-        left: 198px;
-        border-left-color: transparent;
-        border-right-color: transparent;
-        animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
-      }
-      #loader4 {
-        border: 3px solid #94B6E5;
-        width: 260px;
-        height: 260px;
-        position: absolute;
-        top: 62px;
-        left: 189px;
-        border-left-color: transparent;
-        border-right-color: transparent;
-        animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
-      }
-      @keyframes rotate {
-        0% {
-          transform: rotateZ(-360deg);
+        <meta charset="utf-8">
+        <title>The Cataegis extension</title>
+        <style>
+        #ce {
+        text-align: center;
         }
-        100% {
-          transform: rotateZ(0deg);
-        }
-      }
-      @keyframes rotate2 {
-        0% {
-          transform: rotateZ(360deg);
-        }
-        100% {
-          transform: rotateZ(0deg);
-        }
-      }
-      #text {
-        font-size: 33px;
-        position: absolute;
-        top: 7px;
-        left: 182px;
-      }
-    #tree {
-    position: absolute;
-    left: 453px;
-    top: -13px;
-    z-index: -1;
-    }
-    #seed {
-    position: absolute;
-    left: 231px;
-    top: 86px;
-    z-index: -1;
-    }
-    #sap {
-    position: absolute;
-    left: -3px;
-    top: -27px;
-    z-index: -1;
-    }
-    #seedling {
-    position: absolute;
-    left: 155px;
-    top: 65px;
-    }
-    #cc {
-    position: absolute;
-    left: -27px;
-    top: 138px;
-    }
-  
-    #Membersbutton {
-    position: relative;
-    left: 295px;
-    top: 338px;
-     background: rgb(133, 129, 129);
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 0 25px;
-    line-height: 36px;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
-    transition: all 0.5s;
-    outline: none;
-    }
-    #subbutton {
-    position: relative;
-    left: -328px;
-    top: 338px;
-     background: rgb(133, 129, 129);
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 0 25px;
-    line-height: 36px;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
-    transition: all 0.5s;
-    outline: none;
-    }
-    #programsbutton {
-    position: relative;
-    left: -191px;
-    top: 224px;
-     background: rgb(133, 129, 129);
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 0 25px;
-    line-height: 36px;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
-    transition: all 0.5s;
-    outline: none;
-    }
-    #Membersbutton:hover {
-    background: rgb(0, 0, 0);
-    }
-    #programsbutton:hover {
-    background: rgb(0, 0, 0);
-    }
-    #leaderboardbutton {
-    position: relative;
-    left: 422px;
-    top: 98px;
-    background: rgb(133, 129, 129);
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 0 25px;
-    line-height: 36px;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
-    transition: all 0.5s;
-    outline: none;
-    }
-    #leaderboardbutton:hover {
-    background: rgb(0, 0, 0);
-    }
-    #subbutton:hover {
-    background: rgb(0, 0, 0);
-    }
-    #aboutbutton {
-    position: relative;
-    left: -2px;
-    top: 98px;
-    background: rgb(133, 129, 129);
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 0 25px;
-    line-height: 36px;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
-    transition: all 0.5s;
-    outline: none;
-    }
-    #aboutbutton:hover {
-    background: rgb(0, 0, 0);
-    }
-    #c {
-    position: absolute;
-    left: 346px;
-    top: 103px;
-    }
-    .btn {
-  background-color: DodgerBlue; /* Blue background */
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 12px 16px; /* Some padding */
-  font-size: 16px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
-}
+            body
+            {
+                font-family: Comic Sans MS;
+                
+                background-color: rgb(255, 255, 255);
+                
+                margin: 0;
+                
+                font-size: 16px;
+            }
+            
+            header
+            {
+                background-color: rgb(51, 51, 51);
+                
+                position: -webkit-sticky; 
+                
+                position: sticky;
+                
+                top: 0;
+                
+                z-index: 10;
+            }
+            
+            header nav ul 
+            {
+                list-style-type: none;
+                
+                margin: 0;
+                
+                padding: 0;
+                
+                overflow: hidden;
+            }
+            
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
-}
-    .page {
-    -webkit-animation: fadeIn 3s ease forwards;
+            
+            header nav li 
+            {
+                float: left;
+            }
+            
+            header nav li a 
+            {
+                display: block;
+                
+                color: white;
+                
+                text-align: center;
+                
+                padding: 14px 16px;
+                
+                text-decoration: none;
+            }
+            
+            header nav li a:hover 
+            {
+                background-color: rgb(255, 0, 0);
+            }
+            
+        
+            header nav li.active 
+            
+            {
+                background-color: rgb(22, 98, 184);
+            }
+            
+            .page {
+                padding: 0 10px;
+                
+                text-align: left;
+        
+                -webkit-animation: fadeIn 3s ease forwards;
                 
                    -moz-animation: fadeIn 3s ease forwards;
                    
                      -o-animation: fadeIn 3s ease forwards;
                      
                         animation: fadeIn 3s ease forwards;
-    }
-       @-webkit-keyframes fadeIn 
+            }
+            
+            @-webkit-keyframes fadeIn 
             
             {
                 from { opacity: 0; }
@@ -420,239 +121,99 @@ ______________________________________________________________________
                 to   { opacity: 1; }
                 
             }
-            #text {
-            position: absolute;
-            left: 200px;
-            }
-    </style>
-    </head>
-    <body>
-    <div id = "loadpage" class = "page">
-    <div class = "clicktomove">
-    <div class="spin-container">
-      <div class="spin" id="loader"><img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "why" width = "200"></div>
-      <div class="spin" id="loader2"></div>
-      <div class="spin" id="loader3"></div>
-      <div class="spin" id="loader4"></div>
-      <span id="text">Team Cataegis</span>
-      <span id="text2">Home of the great Whirlwinds<br>(Click to move on)</span>
-    </div>
-    </div>
-    <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<div class="overlay-content">
-<h3 id = "ka">KA Extenison</h3>
-    <h3 id = "fx" >Fix Errors</h3>
-    <h3 id = "co">The Coding Olympics</h3>
-    <h6>© <span id = "Clovenbob">Clovenbob</span> 2020</h6>
-</div>
-</div>
-    <i class="material-icons" id = "more" onclick="openNav()">more_vert</i>
-    </div> <!-- Load Page -->
-    <div id = "homepage" class = "page">
-    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "c" width = "331" class = "spin2">
-    <img src = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6096104821702656/latest.png" id = "seedling">
-    <img src = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6254604583518208/latest.png" id = "seed" width = "214" class = "ani">
-    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "cc" width = "233">
-    <img src = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/5772363810029568/latest.png" id = "sap">
-    <img src = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6399091846758400/latest.png" id = "tree" width = "159">
-    <h1 id = "ch">Cataegis Homepage</h1>
-    <button id = "aboutbutton">About</button>
-    <button id = "leaderboardbutton">Lead</button>
-    <button id = "Membersbutton">Members</button>
-    <button id = "subbutton">Sub</button>
-    <button id = "programsbutton">Programs</button>
-    </div> <!-- Home page-->
-    <div id = "aboutpage" class = "page">
-    <button class="btn"><i class="material-icons right">home</i></button>
-    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "c" width = "331" class = "spin2">
-    <div class="typewriter">
-
-    <p>We are team Cataegis and we will win<br> the coding olympics because we are a strong<br> group of programmers</p>    
-    </div>
-    </div><!-- About page-->
-    <div id = "leaderboardpage" class = "page">
-    <button class="btn"><i class="material-icons right">home</i></button>
-    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "c" width = "331" class = "spin2">
-   <div class="typewriter">
-   <ol>
-    <img src = "https://www.khanacademy.org/cs/avatars/5360613860130816/6455863303290880.png" width = "100"><li>Arbor: points 0</li> 
-    <img src = "https://www.khanacademy.org/cs/avatars/5360613860130816/5247396508942336.png" width = "100"><li>Brisingr: points 0</li>
-    <img src = "https://www.khanacademy.org/cs/avatars/5360613860130816/5553518155481088.png" width = "100"><li>Cataegis(Yeah) points 0</li>
-    <img src = "https://www.khanacademy.org/cs/avatars/5360613860130816/5916562748424192.png" width = "100"><li>Flame: points 0</li>
-    <img src = "https://www.khanacademy.org/cs/avatars/5360613860130816/5516232403533824.png" width = "100"><li>Floran: points 0</li>
-    <img src = "https://www.khanacademy.org/cs/avatars/5360613860130816/5026116371300352.png" width = "100"><li>Oceanus: points 0</li>
-    <img src = "https://www.khanacademy.org/cs/avatars/5360613860130816/6077287370407936.png" width = "100"><li>Spriker: points 0</li>
-   </ol>
-    </div>
-    </div><!-- lead page-->
-    <div id = "memberspage" class = "page">
-  <button class="btn"><i class="material-icons right">home</i></button>
-    </div><!-- Members page-->
-    <div id = "subpage" class = "page"><button class="btn"><i class="material-icons right">home</i></button>
-    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "c" width = "331" class = "spin2">
-    <div class="typewriter">
-    <h3>Post a "." or anything less than three characters to be<br> notified when the team releases a new program</h3>
-    </div>
-    </div><!-- Sub page-->
-    <div id = "programspage" class = "page"><button class="btn"><i class="material-icons right">home</i></button>
-    <div class="typewriter">
-    <h1>None yet...</h1>
-    </div>
-    </div><!-- Programs page-->
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>
-$("#loadpage").show();
-$("#aboutpage, #leaderboardpage, #memberspage, #subpage, #homepage, #programspage, .hidden").hide();
-$("#aboutbutton").on("click", function(){
-$("#homepage, #leaderboardpage, #memberspage, #subpage, #programspage").hide();
-$("#aboutpage").show();
-})
-$("#leaderboardbutton").on("click", function(){
-$("#homepage, #aboutpage, #memberspage, #subpage, #programspage").hide();
-$("#leaderboardpage").show();
-})
-$("#Membersbutton").on("click", function(){
-$("#homepage, #aboutpage, #memberspage, #subpage, #programspage").hide();
-$("#memberspage").show();
-})
-$("#subbutton").on("click", function(){
-$("#homepage, #aboutpage, #memberspage, #memberspage, #programspage").hide();
-$("#subpage").show();
-})
-$("#programsbutton").on("click", function(){
-$("#homepage, #aboutpage, #memberspage, #memberspage, #subpage").hide();
-$("#programspage").show();
-})
-$(".btn").on("click", function(){
-$("#subpage, #aboutpage, #memberspage, #memberspage, #leaderboardpage, #programspage").hide();
-$("#homepage").show();
-})
-$(".clicktomove").on("click", function(){
-$("#loadpage, .hidden").hide();
-$("#homepage").show();
-$("#homepage").append("<div class = ani id = rotatething><h1>#CataegisFTW<h1></div>")
-})
-$("#fx").on("click", function(){
-$("body").hide();
-window.open("https://www.khanacademy.org/computer-programming/cataegis-homepage/6420786418630656?width=650&height=400")
-})
-$("#ka").on("click", function(){
-window.open("https://chrome.google.com/webstore/detail/the-khan-academy-extensio/gniggljddhajnfbkjndcgnomkddfcial")
-})
-$("#co").on("click", function(){
-window.open("https://khanacademy.org/cs/i/5971550287773696")
-})
-$("#Clovenbob").on("click", function(){
-window.open("https://www.khanacademy.org/profile/Clovenbob/")
-})
- var members = [
-                /**
-               Thanks To Iron programing for this part!!!
-                **/
-                {
-                    kaid: "kaid_718399793020522021874167",
-                    points: 0,
-                    level: 4
-                },
-                {
-                    kaid: "kaid_553656479258879622339276",
-                    points: 0,
-                    level: 4
-                },
-                {
-                    kaid: "kaid_988216754712412546920030",
-                    points: 0,
-                    level: 2
-                },
-                {
-                    kaid: "kaid_404458396245653726382807",
-                    points: 0,
-                    level: 2
-                },
-                {
-                    kaid: "kaid_1086461279125886617845231",
-                    points: 0,
-                    level: 2
-                },
-                {
-                    kaid: "kaid_695872435156739002959814",
-                    points: 0,
-                    level: 2
-                },
-                {
-                    kaid: "kaid_1126516421561536754759926",
-                    points: 0,
-                    level: 4
-                },
-                {
-                    kaid: "kaid_66098262377513172559095",
-                    points: 0,
-                    level: 2
-                },
-                {
-                    kaid: "kaid_431495398067635690186554",
-                    points: 0,
-                    level: 3
-                },
-            ];
             
-            function addMember(user) {
-                var MEMBER = members[user],
-                    KAID = members[user].kaid,
-                    AVATAR;
-                $.getJSON("https://www.khanacademy.org/api/internal/user/profile?kaid=" + KAID + "&callback=?", function(data) {
-                    if (members[user].level == 4) {
-                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png"
-                    }
-                    else if (members[user].level == 3) {
-                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/5772363810029568/latest.png"
-                    }
-                   else  if (members[user].level == 2) {
-                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6399091846758400/latest.png"
-                    }
-                    else if (members[user].level == 1) {
-                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6096104821702656/latest.png"
-                    }
-                    else if (members[user].level == 0) {
-                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6254604583518208/latest.png"
-                    }
-                    var NAME = data.nickname;
-                    
-                    if (NAME.length > 20) {
-                        var str = data.nickname;
-                        NAME = str.slice(0, 20) + "...";
-                    } else {
-                        NAME = data.nickname;
-                    }
-                
-                    var $newMember = $("<div class='memberSlot'><img class='member-img' width='95px' src='" + AVATAR +"'><h3 class='member-name'>" + NAME + "</h3><p class='member-points'> Points: " + members[user].points + "</p><p class='member-level'>Level: " + members[user].level + "</p></div>");
-                    
-                    $newMember.appendTo("#memberspage");
-                });
-            }
-            
-            var index = 0;
-            function loop() {
-              setTimeout(function() {
-                addMember(index);
-                index++;
-                if (index < members.length) {
-                  loop();
-                } else {
-                    $("#loading").hide();
-                }
-              }, 10);
-            };
+        </style>
         
-            loop();
-     function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+    </head>
+    
+    <body>
+    
+        <header>
+        
+            <nav>
+                
+                <ul class="nav">
+                
+                    <li id="homeButton" class="active">
+                    
+                        <a  href="https://www.khanacademy.org" 
+                            onClick="switchPage('#home');return false;" 
+                            title="Home">Home
+                                
+                            </a>
+                            
+                    </li>
+                    
+                    <li id="howButton">
+                    
+                        <a  href="https://www.khanacademy.org" 
+                            onClick="switchPage('#how');return false;" 
+                            title="how">How?
+                            
+                            </a>
+                            
+                    </li>
+                    
+                    <li id="whyButton">
+                    
+                        <a  href="https://www.khanacademy.org" 
+                            onClick="switchPage('#why');return false;" 
+                            title="why">Why?
+                                
+                            </a>
+                            
+                    </li>
+                    
+                   
+                </ul>
+                
+            </nav>
+            
+        </header>
+        
+        <main>
+           
+            <div id="home" class="page">
+            <h1>The Cataegis extension</h1>
+            <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png">
+            </div>
+            
+            <div id="how" class="page">
+            <p>
+            It just takes 2 clicks and its free!!!<br> here are the links:      </p>
+            <ul>
+            <li>Chrome: coming soon</li>
+            <li>Edge: <a href = "https://microsoftedge.microsoft.com/addons/detail/the-catageis-extension/gllenglbicnfpbbgnfhpnbigbnbcdjio">Here</a></li>
+            </ul>
+            </div> 
+            
+            <div id="why" class="page">
+            <h1>We Do not take any data.</h1>
+    
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+            </div>
+            
+    
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+
+    		var switchPage = function (page){
+
+    			$(".page").css({ display: "none" });
+ 
+    			$(page).css({ display: "block" });
+    
+    			$('header nav li').removeClass('active');
+
+                $(page+"Button").addClass('active');
+                
+    		};
+    	
+    		switchPage('#home');
+    		
 </script>
     </body>
+    
 </html>
