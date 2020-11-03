@@ -1,220 +1,47 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html>
     <head>
-    
         <meta charset="utf-8">
-        <title>The Cataegis extension</title>
-        <meta name="google-site-verification" content="kaV02Zh23uanZcvAXuIK88nPMMlw8E5bgvSyKm1Duy0" />
+        <title>Click Here</title>
         <style>
-        #ce {
-        text-align: center;
+        #Button:hover {
+    background: rgb(0, 0, 0);
         }
-            body
-            {
-                font-family: Comic Sans MS;
-                
-                background-color: rgb(255, 255, 255);
-                
-                margin: 0;
-                
-                font-size: 16px;
-            }
-            
-            header
-            {
-                background-color: rgb(51, 51, 51);
-                
-                position: -webkit-sticky; 
-                
-                position: sticky;
-                
-                top: 0;
-                
-                z-index: 10;
-            }
-            
-            header nav ul 
-            {
-                list-style-type: none;
-                
-                margin: 0;
-                
-                padding: 0;
-                
-                overflow: hidden;
-            }
-            
-
-            
-            header nav li 
-            {
-                float: left;
-            }
-            
-            header nav li a 
-            {
-                display: block;
-                
-                color: white;
-                
-                text-align: center;
-                
-                padding: 14px 16px;
-                
-                text-decoration: none;
-            }
-            
-            header nav li a:hover 
-            {
-                background-color: rgb(255, 0, 0);
-            }
-            
-        
-            header nav li.active 
-            
-            {
-                background-color: rgb(22, 98, 184);
-            }
-            
-            .page {
-                padding: 0 10px;
-                
-                text-align: left;
-        
-                -webkit-animation: fadeIn 3s ease forwards;
-                
-                   -moz-animation: fadeIn 3s ease forwards;
-                   
-                     -o-animation: fadeIn 3s ease forwards;
-                     
-                        animation: fadeIn 3s ease forwards;
-            }
-            
-            @-webkit-keyframes fadeIn 
-            
-            {
-                from { opacity: 0; }
-                
-                to   { opacity: 1; }
-            }
-            
-               @-moz-keyframes fadeIn 
-               
-                {
-                from { opacity: 0; }
-                
-                to   { opacity: 1; }
-                 }
-               
-                 @-o-keyframes fadeIn 
-                 
-                 {
-                from { opacity: 0; }
-                
-                to   { opacity: 1; }
-                 }
-                    @keyframes fadeIn
-                    {
-                from { opacity: 0; }
-                
-                to   { opacity: 1; }
-                
-            }
-            
+        .btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+           #Button {
+    position: relative;
+    left: 218px;
+    top: 161px;
+     background: rgb(0, 85, 255);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0 25px;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
+    transition: all 0.5s;
+    outline: none;
+    }
         </style>
-        
     </head>
-    
     <body>
-    
-        <header>
-        
-            <nav>
-                
-                <ul class="nav">
-                
-                    <li id="homeButton" class="active">
-                    
-                        <a  href="https://www.khanacademy.org" 
-                            onClick="switchPage('#home');return false;" 
-                            title="Home">Home
-                                
-                            </a>
-                            
-                    </li>
-                    
-                    <li id="howButton">
-                    
-                        <a  href="https://www.khanacademy.org" 
-                            onClick="switchPage('#how');return false;" 
-                            title="how">How?
-                            
-                            </a>
-                            
-                    </li>
-                    
-                    <li id="whyButton">
-                    
-                        <a  href="https://www.khanacademy.org" 
-                            onClick="switchPage('#why');return false;" 
-                            title="why">Privacy
-                                
-                            </a>
-                            
-                    </li>
-                    
-                   
-                </ul>
-                
-            </nav>
-            
-        </header>
-        
-        <main>
-           
-            <div id="home" class="page">
-            <h1>The Cataegis extension</h1>
-            <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png">
-            </div>
-            
-            <div id="how" class="page">
-            <p>
-            It just takes 2 clicks and its free!!!<br> here are the links:      </p>
-            <ul>
-            <li>Chrome: coming soon</li>
-            <li>Edge: <a href = "https://microsoftedge.microsoft.com/addons/detail/the-catageis-extension/gllenglbicnfpbbgnfhpnbigbnbcdjio">Here</a></li>
-            </ul>
-            </div> 
-            
-            <div id="why" class="page">
-            <h1>We Do not take any data.</h1>
-    
-
-            </div>
-            
-    
-        </main>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>
-
-    		var switchPage = function (page){
-
-    			$(".page").css({ display: "none" });
- 
-    			$(page).css({ display: "block" });
-    
-    			$('header nav li').removeClass('active');
-
-                $(page+"Button").addClass('active');
-                
-    		};
-    	
-    		switchPage('#home');
-    		
+<button id = "Button">Click Me</button>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$("#Button").on("click", function(){
+window.open("http://bitly.com/98K8eH")
+})
 </script>
     </body>
-    
 </html>
