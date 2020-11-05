@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Click Here</title>
+        <title>A Clicker Game</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
         <style>
@@ -27,6 +27,10 @@
 }
         body {
              font-family: 'MuseoModerno', cursive, arial, helvetica, impact;
+        background-image: url("https://th.bing.com/th/id/OIP.iutBC3v3HMa7AURluGRx5AHaEK?pid=Api&rs=1");
+         background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
         }
         #Button:hover {
     background: rgb(0, 0, 0);
@@ -50,12 +54,18 @@
         </style>
     </head>
     <body>
+<div id = "home">
 <h1 class = "typewriter">Click Below</h1>
 <button id = "Button">Click Me</button>
+</div>
+<div id = "page1"><h2 class = "typewriter">You Clicked Me...</h2></div>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
+$("#home").show();
+$("#page1").hide();
 $("#Button").on("click", function(){
-window.open("https://www.youtube.com/watch?v=QtBDL8EiNZo")
+$("#home").hide();
+$("#page1").show();
 })
 </script>
     </body>
