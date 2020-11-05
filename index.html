@@ -3,14 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title>Click Here</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
         <style>
+        .typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 1.0s steps(300, end),
+    /*Or:
+    typing 3.5s steps(30, end),
+    */
+    blink-caret .5s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+        body {
+             font-family: 'MuseoModerno', cursive, arial, helvetica, impact;
+        background-image: url("https://th.bing.com/th/id/OIP.iutBC3v3HMa7AURluGRx5AHaEK?pid=Api&rs=1");
+        }
         #Button:hover {
     background: rgb(0, 0, 0);
         }
            #Button {
-    position: relative;
-    left: 600px;
-    top: 360px;
+    float:left;
      background: rgb(0, 85, 255);
     text-transform: uppercase;
     letter-spacing: .5px;
@@ -28,11 +51,12 @@
         </style>
     </head>
     <body>
+<h1 class = "typewriter">Click</h1>
 <button id = "Button">Click Me</button>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
 $("#Button").on("click", function(){
-window.open("http://bitly.com/98K8eH")
+window.open("https://www.youtube.com/watch?v=QtBDL8EiNZo")
 })
 </script>
     </body>
