@@ -32,11 +32,16 @@
   background-repeat: no-repeat;
   background-size: cover;
         }
-        #Button:hover {
+        .Button:hover {
     background: rgb(0, 0, 0);
         }
-           #Button {
-    float:left;
+        #b2 {
+        float:right;
+        }
+        #b1 {
+        float:left;
+        }
+           .Button {
      background: rgb(0, 85, 255);
     text-transform: uppercase;
     letter-spacing: .5px;
@@ -56,16 +61,25 @@
     <body>
 <div id = "home">
 <h1 class = "typewriter">Click Below</h1>
-<button id = "Button">Click Me</button>
+<button class = "Button" id = "b1">Click Me</button>
+<Button class = "Button" id = "b2">Code</Button>
 </div>
 <div id = "page1"><h2 class = "typewriter">You Clicked Me...</h2></div>
+<div id = "page2">
+<h6>Coming soon</h6>
+</div>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
 $("#home").show();
 $("#page1").hide();
-$("#Button").on("click", function(){
+$("#page2").hide();
+$("#b1").on("click", function(){
 $("#home").hide();
 $("#page1").show();
+})
+$("#b2").on("click", function(){
+$("#home").hide();
+$("#page2").show();
 })
 </script>
     </body>
