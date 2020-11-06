@@ -1,86 +1,168 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>How to make an Html button</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
-        <style>
-        .typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 1.0s steps(300, end),
-    /*Or:
-    typing 3.5s steps(30, end),
-    */
-    blink-caret .5s step-end infinite;
+<head>
+ <link href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }
 
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  .cancelbtn {
+     width: 100%;
+  }
 }
-        body {
-             font-family: 'MuseoModerno', cursive, arial, helvetica, impact;
-        background-image: url("https://th.bing.com/th/id/OIP.iutBC3v3HMa7AURluGRx5AHaEK?pid=Api&rs=1");
-         background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-        }
-        .Button:hover {
-    background: rgb(0, 0, 0);
-        }
-        #b2 {
-        float:right;
-        }
-        #b1 {
-        float:left;
-        }
-           .Button {
-     background: rgb(0, 85, 255);
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 0 25px;
-    line-height: 36px;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
-    transition: all 0.5s;
-    outline: none;
-    }
-        </style>
-    </head>
-    <body>
-<div id = "home">
-<h1 class = "typewriter">Click Below</h1>
-<button class = "Button" id = "b1">Click Me</button>
-<Button class = "Button" id = "b2">Code</Button>
+</style>
+</head>
+<body>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class='material-icons'>account_circle</i></button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://th.bing.com/th/id/OIP.DVoj_J9g7E8eCEUpphqyvQHaHa?pid=Api&rs=1" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
 </div>
-<div id = "page1"><h2 class = "typewriter">You Clicked Me...</h2></div>
-<div id = "page2">
-<h6>Coming soon</h6>
-</div>
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <script>
-$("#home").show();
-$("#page1").hide();
-$("#page2").hide();
-$("#b1").on("click", function(){
-$("#home").hide();
-$("#page1").show();
-})
-$("#b2").on("click", function(){
-$("#home").hide();
-$("#page2").show();
-})
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 </script>
-    </body>
+
+</body>
 </html>
