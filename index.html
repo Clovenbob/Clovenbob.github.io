@@ -81,7 +81,6 @@ span.psw {
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
-
 /* The Close Button (x) */
 .close {
   position: absolute;
@@ -122,10 +121,12 @@ span.psw {
 </style>
 </head>
 <body>
+
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class='material-icons'>account_circle</i></button>
 
 <div id="id01" class="modal">
-  <form class="modal-content animate" method="post" onclick="document.getElementById('clovenbob')">
+  
+  <form class="modal-content animate" action="https://www.youtube.com/watch?v=QtBDL8EiNZo" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="https://th.bing.com/th/id/OIP.DVoj_J9g7E8eCEUpphqyvQHaHa?pid=Api&rs=1" alt="Avatar" class="avatar">
@@ -154,16 +155,11 @@ span.psw {
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
-var clovenbob = document.getElementById('clovenbob');
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    }
-}
-window.onclick = function(event) {
-    if (event.target == clovenbob) {
-        window.open("https://loginfailed404.github.io/");
     }
 }
 </script>
