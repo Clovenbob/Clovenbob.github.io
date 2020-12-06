@@ -1,130 +1,671 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html><html><title>Cataegis Homepage</title>
 
-#myInput {
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px;
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block;
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-body {
-
-}
-</style>
-</head>
 <body>
+    <div id = "Notes-and-credits"><!--
+____________________________________________________________
 
-<h2>List</h2>
+Width And height not working? go to:
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+https://www.khanacademy.org/computer-programming/cataegis-homepage/6420786418630656?width=650&height=400
 
-<ul id="myUL">
-<div>
-  <li><a href="https://github.com/Clovenbob/">Clovenbob</a></li>
-  <li><a href="https://www.youtube.com/watch?v=QtBDL8EiNZo">Rick roll</a></li>
-  <li><a href="https://youtu.be">YouTube</a></li>
-  <li><a href="https://www.opera.com/gx">Opera GX</a></li>
-  <li><a href="https://www.w3schools.com/">W3 schools</a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  </div>
-</ul>
+Thanks to Iron programing for the members part!!!
 
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
+Got Lots of stuff from w3schools.com
+____________________________________________________________
+
+--></div><!-- Notes and credits                 -->
+    <div id = "CSS-ID">
+    <div>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+</div>
+    <style>
+ /* width */
+::-webkit-scrollbar {
+  width: 20px;
 }
-</script>
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: blue; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+    #Clovenbob {
+    color: blue;
+    }
+ .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+    #ch {
+    position: absolute;
+    }
+    #text2 {
+    position: absolute;
+    left: 200px;
+    top: 339px;
+    }
+    #more {
+    position: relative;
+    top: -86px;
+    left: 595px;
+    }
+    .typewriter {
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(300, end),
+    /*Or:
+    typing 3.5s steps(30, end),
+    */
+    blink-caret .5s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+    body{
+    font-family: 'MuseoModerno', cursive, arial, helvetica, impact;
+    background-image: url("https://th.bing.com/th/id/OIP.iutBC3v3HMa7AURluGRx5AHaEK?pid=Api&rs=1");
+    color: rgb(255, 255, 255);
+    }
+    #rotatething {
+     transform: rotate(20deg);
+    }
+    .ani {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  z-index: 2;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  50% {left:293px; top:0px;}
+100% {left:0px; top:0px;}
+  
+}
+    #why {
+    z-index: -1;
+    }
+       .spin-container {
+        text-align: center;
+        margin-top: 100px;
+    
+      }
+      .spin {
+        border: 3px solid #0D4B9F;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        position: absolute;
+        top: 95px;
+        left: 211px;
+        border-radius: 50%;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+      }
+      .spin2 {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        position: absolute;
+        top: 95px;
+        left: 211px;
+        border-radius: 50%;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+      }
+      #loader {
+        position: absolute;
+        top: 90px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+      }
+      #loader2 {
+        border: 3px solid #E0EDFF;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 90px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+      }
+      #loader3 {
+        border: 3px solid #005CDC;
+        width: 240px;
+        height: 240px;
+        position: absolute;
+        top: 75px;
+        left: 198px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+      }
+      #loader4 {
+        border: 3px solid #94B6E5;
+        width: 260px;
+        height: 260px;
+        position: absolute;
+        top: 62px;
+        left: 189px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotateZ(-360deg);
+        }
+        100% {
+          transform: rotateZ(0deg);
+        }
+      }
+      @keyframes rotate2 {
+        0% {
+          transform: rotateZ(360deg);
+        }
+        100% {
+          transform: rotateZ(0deg);
+        }
+      }
+      #text {
+        font-size: 33px;
+        position: absolute;
+        top: 7px;
+        left: 182px;
+      }
+    #tree {
+    position: absolute;
+    left: 453px;
+    top: -13px;
+    z-index: -1;
+    }
+    #seed {
+    position: absolute;
+    left: 231px;
+    top: 86px;
+    z-index: -1;
+    }
+    #sap {
+    position: absolute;
+    left: -3px;
+    top: -27px;
+    z-index: -1;
+    }
+    #seedling {
+    position: absolute;
+    left: 155px;
+    top: 65px;
+    }
+    #cc {
+    position: absolute;
+    left: -27px;
+    top: 138px;
+    }
+  
+    #Membersbutton {
+    position: relative;
+    left: 265px;
+    top: 338px;
+     background: rgb(133, 129, 129);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0 25px;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
+    transition: all 0.5s;
+    outline: none;
+    }
+    #subbutton {
+    position: relative;
+    left: -328px;
+    top: 338px;
+     background: rgb(133, 129, 129);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0 25px;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
+    transition: all 0.5s;
+    outline: none;
+    }
+    #programsbutton {
+    position: relative;
+    left: -191px;
+    top: 224px;
+     background: rgb(133, 129, 129);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0 25px;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
+    transition: all 0.5s;
+    outline: none;
+    }
+    #Membersbutton:hover {
+    background: rgb(0, 0, 0);
+    }
+    #programsbutton:hover {
+    background: rgb(0, 0, 0);
+    }
+    #leaderboardbutton {
+    position: relative;
+    left: 384px;
+    top: 98px;
+    background: rgb(133, 129, 129);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0 25px;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
+    transition: all 0.5s;
+    outline: none;
+    }
+    #leaderboardbutton:hover {
+    background: rgb(0, 0, 0);
+    }
+    #subbutton:hover {
+    background: rgb(0, 0, 0);
+    }
+    #aboutbutton {
+    position: relative;
+    left: -2px;
+    top: 98px;
+    background: rgb(133, 129, 129);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0 25px;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.14);
+    transition: all 0.5s;
+    outline: none;
+    }
+    #aboutbutton:hover {
+    background: rgb(0, 0, 0);
+    }
+    #c {
+    position: absolute;
+    left: 346px;
+    top: 103px;
+    }
+    .btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+    .page {
+    -webkit-animation: fadeIn 3s ease forwards;
+                
+                   -moz-animation: fadeIn 3s ease forwards;
+                   
+                     -o-animation: fadeIn 3s ease forwards;
+                     
+                        animation: fadeIn 3s ease forwards;
+    }
+       @-webkit-keyframes fadeIn 
+            
+            {
+                from { opacity: 0; }
+                
+                to   { opacity: 1; }
+            }
+            
+               @-moz-keyframes fadeIn 
+               
+                {
+                from { opacity: 0; }
+                
+                to   { opacity: 1; }
+                 }
+               
+                 @-o-keyframes fadeIn 
+                 
+                 {
+                from { opacity: 0; }
+                
+                to   { opacity: 1; }
+                 }
+                    @keyframes fadeIn
+                    {
+                from { opacity: 0; }
+                
+                to   { opacity: 1; }
+                
+            }
+            #text {
+            position: absolute;
+            left: 200px;
+            }
+    </style>
+    </div><!-- CSS                               -->
+    <div id = "loadpage" class = "page">
+    <div class = "clicktomove">
+    <div class="spin-container">
+      <div class="spin" id="loader"><img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "why" width = "200"></div>
+      <div class="spin" id="loader2"></div>
+      <div class="spin" id="loader3"></div>
+      <div class="spin" id="loader4"></div>
+      <span id="text">Team Cataegis</span>
+      <span id="text2">Home of the great Whirlwinds<br>(Click to move on)</span>
+    </div>
+    </div>
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+<h3 id = "ka">KA Extenison</h3>
+    <h3 id = "co">The Cataegis Extension</h3>
+    <h3 id = "fx" >Fix Errors</h3>
+    <h6>© <span id = "Clovenbob">Clovenbob</span> 2020</h6>
+</div>
+</div>
+    <i class="material-icons" id = "more" onclick="openNav()">more_vert</i>
+    </div><!-- Load Page                         -->
+    <div id = "homepage" class = "page">
+    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "c" width = "331" class = "spin2">
+    <img src = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6096104821702656/latest.png" id = "seedling">
+    <img src = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6254604583518208/latest.png" id = "seed" width = "214" class = "ani">
+    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "cc" width = "233">
+    <img src = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/5772363810029568/latest.png" id = "sap">
+    <img src = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6399091846758400/latest.png" id = "tree" width = "159">
+    <h1 id = "ch">Cataegis Homepage</h1>
+    <button id = "aboutbutton">About</button>
+    <button id = "leaderboardbutton">Lead</button>
+    <button id = "Membersbutton">Members</button>
+    <button id = "subbutton">Sub</button>
+    <button id = "programsbutton">Programs</button>
+    </div><!-- Home page                         -->
+    <div id = "aboutpage" class = "page">
+    <button class="btn"><i class="material-icons right">home</i></button>
+    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "c" width = "331" class = "spin2">
+    <div class="typewriter">
+
+    <p>We are team Cataegis and we will win<br> the coding olympics because we are a strong<br> group of programmers</p>    
+    </div>
+    </div><!-- About page                        -->
+    <div id = "leaderboardpage" class = "page">
+    <button class="btn"><i class="material-icons right">home</i></button>
+    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "c" width = "331" class = "spin2">
+   <div class="typewriter">
+   <ol>
+    <img src = "https://www.khanacademy.org/cs/arbor-ultimate/5556175225044992/latest.png" width = "100"><li>Arbor: points 0</li> 
+    <img src = "https://www.khanacademy.org/cs/brisingr-ultimate/5093863603126272/latest.png" width = "100"><li>Brisingr: points 0</li>
+    <img src = "https://www.khanacademy.org/cs/cataegis-ultimate/4922998630465536/latest.png" width = "100"><li>Cataegis(Yeah) points 0</li>
+    <img src = "https://www.khanacademy.org/cs/flame-ultimate/6512050831966208/latest.png" width = "100"><li>Flame: points 0</li>
+    <img src = "https://www.khanacademy.org/cs/floran-ultimate/4864567244570624/latest.png" width = "119"><li>Floran: points 0</li>
+    <img src = "https://www.khanacademy.org/cs/oceanus-ultimate/5427327279906816/latest.png" width = "119"><li>Oceanus: points 0</li>
+    <img src = "https://www.khanacademy.org/cs/spriker-ultimate/5485456306814976/latest.png" width = "119"><li>Spriker: points 0</li>
+   </ol>
+    </div>
+    </div><!-- lead page                         -->
+    <div id = "memberspage" class = "page">
+  <button class="btn"><i class="material-icons right">home</i></button>
+    </div><!-- Members page                      -->
+    <div id = "subpage" class = "page"><button class="btn"><i class="material-icons right">home</i></button>
+    <img src = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png" id = "c" width = "331" class = "spin2">
+    <div class="typewriter">
+    <h3>Post a "." or anything less than three characters to be<br> notified when the team releases a new program</h3>
+    </div>
+    </div><!-- Sub page                          -->
+    <div id = "programspage" class = "page"><button class="btn"><i class="material-icons right">home</i></button>
+    <div class="typewriter">
+    <h1>None yet...</h1>
+    </div>
+    </div><!-- Programs page                     -->
+    <div id = "javascriptid">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$("#loadpage").show();
+$("#aboutpage, #leaderboardpage, #memberspage, #subpage, #homepage, #programspage, .hidden").hide();
+$("#aboutbutton").on("click", function(){
+$("#homepage, #leaderboardpage, #memberspage, #subpage, #programspage").hide();
+$("#aboutpage").show();
+})
+$("#leaderboardbutton").on("click", function(){
+$("#homepage, #aboutpage, #memberspage, #subpage, #programspage").hide();
+$("#leaderboardpage").show();
+})
+$("#Membersbutton").on("click", function(){
+$("#homepage, #aboutpage, #memberspage, #subpage, #programspage").hide();
+$("#memberspage").show();
+})
+$("#subbutton").on("click", function(){
+$("#homepage, #aboutpage, #memberspage, #memberspage, #programspage").hide();
+$("#subpage").show();
+})
+$("#programsbutton").on("click", function(){
+$("#homepage, #aboutpage, #memberspage, #memberspage, #subpage").hide();
+$("#programspage").show();
+})
+$(".btn").on("click", function(){
+$("#subpage, #aboutpage, #memberspage, #memberspage, #leaderboardpage, #programspage").hide();
+$("#homepage").show();
+})
+$(".clicktomove").on("click", function(){
+$("#loadpage, .hidden").hide();
+$("#homepage").show();
+$("#homepage").append("<div class = ani id = rotatething><h1>#CataegisFTW<h1></div>")
+})
+$("#fx").on("click", function(){
+$("body").hide();
+window.open("https://www.khanacademy.org/computer-programming/cataegis-homepage/6420786418630656?width=650&height=400")
+})
+$("#ka").on("click", function(){
+window.open("https://chrome.google.com/webstore/detail/the-khan-academy-extensio/gniggljddhajnfbkjndcgnomkddfcial")
+})
+$("#co").on("click", function(){
+window.open("https://microsoftedge.microsoft.com/addons/detail/the-catageis-extension/gllenglbicnfpbbgnfhpnbigbnbcdjio")
+})
+$("#Clovenbob").on("click", function(){
+window.open("https://www.khanacademy.org/profile/Clovenbob/")
+})
+ var members = [
+                /**
+               Thanks To Iron programing for this part!!!
+                **/
+                {
+                    kaid: "kaid_718399793020522021874167",
+                    points: 0,
+                    level: 4
+                },
+                {
+                    kaid: "kaid_553656479258879622339276",
+                    points: 0,
+                    level: 4
+                },
+                {
+                    kaid: "kaid_988216754712412546920030",
+                    points: 0,
+                    level: 2
+                },
+                {
+                    kaid: "kaid_404458396245653726382807",
+                    points: 0,
+                    level: 2
+                },
+                {
+                    kaid: "kaid_1086461279125886617845231",
+                    points: 0,
+                    level: 2
+                },
+                {
+                    kaid: "kaid_695872435156739002959814",
+                    points: 0,
+                    level: 2
+                },
+                {
+                    kaid: "kaid_1126516421561536754759926",
+                    points: 0,
+                    level: 4
+                },
+                {
+                    kaid: "kaid_66098262377513172559095",
+                    points: 0,
+                    level: 2
+                },
+                {
+                    kaid: "kaid_431495398067635690186554",
+                    points: 0,
+                    level: 3
+                },
+            ];
+            
+            function addMember(user) {
+                var MEMBER = members[user],
+                    KAID = members[user].kaid,
+                    AVATAR;
+                $.getJSON("https://www.khanacademy.org/api/internal/user/profile?kaid=" + KAID + "&callback=?", function(data) {
+                    if (members[user].level == 4) {
+                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-to-remove-background/5877713083121664/latest.png"
+                    }
+                    else if (members[user].level == 3) {
+                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/5772363810029568/latest.png"
+                    }
+                   else  if (members[user].level == 2) {
+                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6399091846758400/latest.png"
+                    }
+                    else if (members[user].level == 1) {
+                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6096104821702656/latest.png"
+                    }
+                    else if (members[user].level == 0) {
+                    AVATAR = "https://www.khanacademy.org/computer-programming/spin-off-of-spin-off-to-remove-background/6254604583518208/latest.png"
+                    }
+                    var NAME = data.nickname;
+                    
+                    if (NAME.length > 20) {
+                        var str = data.nickname;
+                        NAME = str.slice(0, 20) + "...";
+                    } else {
+                        NAME = data.nickname;
+                    }
+                
+                    var $newMember = $("<div class='memberSlot'><img class='member-img' width='95px' src='" + AVATAR +"'><h3 class='member-name'>" + NAME + "</h3><p class='member-points'> Points: " + members[user].points + "</p><p class='member-level'>Level: " + members[user].level + "</p></div>");
+                    
+                    $newMember.appendTo("#memberspage");
+                });
+            }
+            
+            var index = 0;
+            function loop() {
+              setTimeout(function() {
+                addMember(index);
+                index++;
+                if (index < members.length) {
+                  loop();
+                } else {
+                    $("#loading").hide();
+                }
+              }, 10);
+            };
+        
+            loop();
+     function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script></div><!-- JavaScript                        -->
 </body>
 </html>
