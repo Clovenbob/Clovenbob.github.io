@@ -29,6 +29,9 @@ ________________________________________________________________________________
 body{
 font-family: 'Mountains of Christmas', cursive;
 }
+#secret {
+text-align:center;
+}
 .material-icons {
 cursor: pointer;
 }
@@ -161,6 +164,7 @@ float:left;
             
         </div> <!-- Nav l                                                  -->
      <div id="r">
+        <i class="material-icons" id = "secretbtn">help</i>
         <i class="material-icons" id = "button2">home</i>
         <i class="material-icons" id = "videos">video_library</i>
         <i class="material-icons" id = "profilebtn">groups</i>
@@ -191,30 +195,39 @@ float:left;
 </div>
     
     </div> <!-- Videopage                                                 -->
+  <div id = "secretpage">
+    <h1 id = "secret" >You Found A Secret Good Job!!!</h1> 
+  </div> <!-- Secret                                                    -->
   <div id = "jsid">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $("#load").show();
-$("#home, #navbar, #videopage, #profile, #text2").hide();
+$("#home, #navbar, #videopage, #profile, #text2, #secretpage, #secretbtn").hide();
 
 $("#button").on("click", function(){
 $("#load").hide();
 $("#home, #navbar").show();
 setTimeout(myFunction, 1000)
+setTimeout(secretstart, 1000)
 })
 
 $("#button2").on("click", function(){
-$("#videopage, #profile").hide();
+$("#videopage, #profile, #secretpage").hide();
 $("#home").show();
 })
 $("#videos").on("click", function(){
-$("#home, #profile").hide();
+$("#home, #profile, #secretpage").hide();
 $("#videopage").show();
 
 })
 $("#profilebtn").on("click", function(){
-$("#home, #videopage").hide();
+$("#home, #videopage, #secretpage").hide();
 $("#profile").show();
+
+})
+$("#secretbtn").on("click", function(){
+$("#home, #videopage, #secretpage, #profile").hide();
+$("#secretpage").show();
 
 })
 function myFunction() {
@@ -227,8 +240,15 @@ function myFunction2() {
   $("#text1").show();
   setTimeout(myFunction, 1000)
 }
+function secretstart() {
+    $("#secretbtn").hide();
+    setTimeout(secretend, 2000)
+}
+function secretend() {
+    $("#secretbtn").show();
+    setTimeout(secretstart, 500)
+}
 </script>
 </div> <!-- JavaScript                                                -->
   
   </body></html>
-
