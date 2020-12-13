@@ -1,130 +1,232 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--________________________________________________________________________________
+ 
+ Notes:
+  
+ *None yet! 
+  
+  
+  
+  
+  
+  
+___________________________________________________________________________________-->
+
+ 
+  <div id = "stylepage">
+    <div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+</div>
 <style>
+
 * {
-  box-sizing: border-box;
+                margin: 0;
+                box-sizing: border-box;
+                text-align:center;
+            }
+body{
+font-family: 'Mountains of Christmas', cursive;
+}
+.material-icons {
+cursor: pointer;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-#myInput {
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ font-family: san-serif, helvetica;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  
 }
 
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#g1 {
+color:green;
+}
+#g2 {
+color: red;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px;
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block;
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
 }
 
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: green;
 }
-body {
-
+.mc {
+    font-size: 96px;
+    text-align:center;
+  position: relative;
+  
+}
+#button {
+    border-radius: 40px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 18px;
+    font-size: 14px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.1s;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+     border: none;
+}
+#button:hover {
+    background: rgb(186, 186, 186);
+    color:black;
+    }
+#ra {
+position:relative;
+top:7px;
+}
+nav {
+    
+    height: 56px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    line-height: 42px;
+    padding: 0 25px;
+    border-bottom: 1px solid gainsboro;
+    padding-top: 14px;
+}
+nav #l {
+float:left;
+}
+nav #r {
+float:right;
+}
+.mch3 {
+font-size:30px;
+position:relative;
+top:-4px;
+}
+#home {
+float:left;
+}
+#videopage {
+float:left;
+}
+#profile {
+float:left;
 }
 </style>
-</head>
-<body>
-
-<h2>List</h2>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
-
-<ul id="myUL">
-<div>
-  <li><a href="https://github.com/Clovenbob/">Clovenbob</a></li>
-  <li><a href="https://www.youtube.com/watch?v=QtBDL8EiNZo">Rick roll</a></li>
-  <li><a href="https://youtu.be">YouTube</a></li>
-  <li><a href="https://www.opera.com/gx">Opera GX</a></li>
-  <li><a href="https://www.w3schools.com/">W3 schools</a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  <li><a href="#"></a></li>
-  </div>
-</ul>
-
+  </div> <!-- Style                                                     -->
+  <div id = "navbar">
+     <nav>
+     <div id="l">
+        <div id = "text1">
+        <h3 class = "mch3"><span id = "g1">M</span><span id = "g2">e</span><span id = "g1">r</span><span id = "g2">r</span><span id = "g1">y</span></h3></div>
+        <div id = "text2">
+        <h3 class = "mch3"><span id = "g2">C</span><span id = "g1">h</span><span id = "g2">r</span><span id = "g1">i</span><span id = "g2">s</span><span id = "g1">t</span><span id = "g2">m</span><span id = "g1">a</span><span id = "g2">s</span></h3></div>
+            
+        </div> <!-- Nav l                                                  -->
+     <div id="r">
+        <i class="material-icons" id = "button2">home</i>
+        <i class="material-icons" id = "videos">video_library</i>
+        <i class="material-icons" id = "profilebtn">groups</i>
+        
+     </div> <!-- Nav r                                                  -->
+        
+     </nav>
+  </div> <!-- Nav                                                       -->
+  <div id = "profile">
+  <div class="tooltip">Put Some stuff here
+  <span class="tooltiptext">Coming soon</span>
+</div>
+    
+  </div> <!-- Profilepage                                               -->
+  <div id = "home">
+    <div>
+   <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/NativityChristmasLights2.jpg/240px-NativityChristmasLights2.jpg">
+   </div>
+    </div> <!-- Homepage                                                  -->
+  <div id = "load">
+    <h1 class = "mc">
+    <span id = "g1">M</span><span id = "g2">e</span><span id = "g1">r</span><span id = "g2">r</span><span id = "g1">y</span> <span id = "g2">C</span><span id = "g1">h</span><span id = "g2">r</span><span id = "g1">i</span><span id = "g2">s</span><span id = "g1">t</span><span id = "g2">m</span><span id = "g1">a</span><span id = "g2">s</span></h1>
+    <button id="button">Start<i id = "ra" class="material-icons">arrow_right</i></button>
+    </div> <!-- Loadpage                                                  --> 
+  <div id = "videopage">
+  <div class="tooltip">Put Videos here
+  <span class="tooltiptext">This is still a WIP so no videos yet...</span>
+</div>
+    
+    </div> <!-- Videopage                                                 -->
+  <div id = "jsid">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+$("#load").show();
+$("#home, #navbar, #videopage, #profile, #text2").hide();
+
+$("#button").on("click", function(){
+$("#load").hide();
+$("#home, #navbar").show();
+setTimeout(myFunction, 1000)
+})
+
+$("#button2").on("click", function(){
+$("#videopage, #profile").hide();
+$("#home").show();
+})
+$("#videos").on("click", function(){
+$("#home, #profile").hide();
+$("#videopage").show();
+
+})
+$("#profilebtn").on("click", function(){
+$("#home, #videopage").hide();
+$("#profile").show();
+
+})
 function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
+  $("#text1").hide();
+  $("#text2").show();
+  setTimeout(myFunction2, 1000)
+}
+function myFunction2() {
+  $("#text2").hide();
+  $("#text1").show();
+  setTimeout(myFunction, 1000)
 }
 </script>
-
-</body>
-</html>
+</div> <!-- JavaScript                                                -->
+  
+  </body></html>
