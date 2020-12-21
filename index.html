@@ -1,16 +1,7 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><title>Merry Christmas</title></head><body> 
-<!--____________________________________________________________________________
- 
- Notes:
-  
- *None yet! 
-  
-  
-  
-  
-  
-  
-_____________________________________________________________________________-->
+<!DOCTYPE html><html><head><title>WIP #2</title></head><body><script>
+var change = false;
+</script>
+
 
  
   <div id = "stylepage">
@@ -29,7 +20,12 @@ _____________________________________________________________________________-->
 body{
 font-family: 'Mountains of Christmas', cursive;
 }
-
+#code123 {
+position: absolute;     
+top: 100%;     
+left: 100%;
+transform: translate(-100%, -100%);
+}
 #secret {
 text-align:center;
 }
@@ -112,8 +108,7 @@ color: red;
     text-shadow: none;
     display: inline-block;
     text-align: center;
-        height: 12%;
-    width: 30%;
+    height: 12%;
      border: none;
      position: absolute;     
 top: 50%;     
@@ -123,9 +118,9 @@ transform: translate(-50%, -50%);
 #button22 {
 
 position: absolute;     
-top: 50%;     
-left: 50%;
-transform: translate(-50%, -50%);
+top: 1%;     
+left: 1%;
+transform: translate(-1%, -1%);
     border-radius: 40px;
     height: 36px;
     line-height: 36px;
@@ -141,16 +136,16 @@ transform: translate(-50%, -50%);
     text-shadow: none;
     display: inline-block;
     text-align: center;
-    height: 12%;
-    width: 30%;
+    height: 3%;
+    width: 3%;
      border: none;
 }
 #button44 {
 
 position: absolute;     
-top: 30%;     
+top: 1%;     
 left: 50%;
-transform: translate(-50%, -30%);
+transform: translate(-1%, -30%);
     border-radius: 40px;
     height: 36px;
     line-height: 36px;
@@ -166,9 +161,11 @@ transform: translate(-50%, -30%);
     text-shadow: none;
     display: inline-block;
     text-align: center;
-    height: 12%;
-    width: 30%;
+    height: 3%;
+    width: 3%;
      border: none;
+     background-color: white;
+     color: white;
 }
 #button66 {
 
@@ -247,136 +244,77 @@ float:left;
 }
 </style>
   </div> <!-- Style                                                  -->
-  <div id = "navbar">
-     <nav>
-     <div id="l">
-        <div id = "text1">
-        <h3 class = "mch3"><span id = "g1">M</span><span id = "g2">e</span><span id = "g1">r</span><span id = "g2">r</span><span id = "g1">y</span><span> </span><span id = "g2">C</span><span id = "g1">h</span><span id = "g2">r</span><span id = "g1">i</span><span id = "g2">s</span><span id = "g1">t</span><span id = "g2">m</span><span id = "g1">a</span><span id = "g2">s</span></h3></div>
-        <div id = "text2">
-        <h3 class = "mch3">
-        <span id = "g1">H</span><span id = "g2">a</span><span id = "g1">p</span><span id = "g2">p</span><span id = "g1">y</span><span> </span><span id = "g2">H</span><span id = "g1">o</span><span id = "g2">l</span><span id = "g1">i</span><span id = "g2">d</span><span id = "g1">a</span><span id = "g2">y</span><span id = "g1">s</span>
-        </h3>
-        </div>
-        </div> <!-- Nav l                                                  -->
-     <div id="r">
-        <i class="material-icons" id = "secretbtn">help</i>
-        <i class="material-icons" id = "button2">home</i>
-        <i class="material-icons" id = "videos">video_library</i>
-        <i class="material-icons" id = "profilebtn">groups</i>
-        <i class="material-icons" id = "codebtn">code</i>
-     </div> <!-- Nav r                                                  -->
-        
-     </nav>
-  </div> <!-- Nav                                                    -->
-  <div id = "profile">
-  <div class="tooltip">Put Some stuff here
-  <span class="tooltiptext">Coming soon</span>
-</div>
-    
-  </div> <!-- Profilepage                                            -->
+  <div id = "page2">
+    <button id = "button44"></button>
+    <h1>Click around the page the button is hidden</h1>
+    </div> <!-- Page 2                                                 -->
+  <div id = "page3">
+    <h1>What is the code<br>Hint: 3-12-15-22-5-14-2-15-2
+    </h1>
+    <input type="password" placeholder = "Put Password Here" id = "password">
+    </div> <!-- Page 3                                                 -->
+  <div id = "page4">
+   <h1>Type code123 into Start</h1>
+    </div> <!-- Page 4                                                 -->
+  <div id = "page5">
+   <h4>Press Ctrl+Shift+i<br>Then Change<br> Var Change = false <br>to<br> var change = true</h4>
+    </div> <!-- Page 5                                                 -->
+  <div id = "page6">
+   <h1>Coming Soon!</h1>
+    </div> <!-- Page 6                                                 -->
   <div id = "home">
-    <div>
-    <button id="button22">Videos <i class="material-icons" id = "ra">video_library</i></button>
-    <button id="button44">People <i class="material-icons" id = "ra">groups</i></button>
-    <button id="button66">Code <i class="material-icons" id = "ra">code</i></button>
-   </div>
-   
+    <button id = "button22" id = "dcm">Don't Click me</button>
+    <input id = "code123" placeholder = "???">
     </div> <!-- Homepage                                               -->
   <div id = "load" style = "height: 55px;">
     <h1 class = "mc">
-    <span id = "g1">M</span><span id = "g2">e</span><span id = "g1">r</span><span id = "g2">r</span><span id = "g1">y</span> <span id = "g2">C</span><span id = "g1">h</span><span id = "g2">r</span><span id = "g1">i</span><span id = "g2">s</span><span id = "g1">t</span><span id = "g2">m</span><span id = "g1">a</span><span id = "g2">s</span></h1>
+    A Normal Webpage
+  </h1>
     <button id="button">Start<i id = "ra" class="material-icons">arrow_right</i></button>
     </div> <!-- Loadpage                                               -->
-  <div id = "videopage">
-  <iframe width="600" height="300" src="https://www.jibjab.com/view/make/rockin_around_the_christmas_tree/6f4c12d2-1751-49ff-97f2-9c035f1d3447" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <iframe width="600" height="300" src="https://www.jibjab.com/view/make/sled_race/b051d683-40a2-4cc4-9943-56a2914f5614" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-    <iframe width="600" height="300" src="https://www.jibjab.com/view/make/a_christmas_carol/0a1283ec-7d5c-4e40-83fd-ba1705069dcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <iframe width="600" height="300" src="https://www.jibjab.com/view/make/christmas_sign_spinner/22307ce1-2a04-45bf-a628-63171f408d1f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- </div> <!-- Videopage                                              -->
-  <div id = "codepage"><h1>
-<a href="https://raw.githubusercontent.com/Clovenbob/Clovenbob.github.io/master/index.html">Click here</a></h1>
-    
-    </div> <!-- Codepage                                               -->
-  <div id = "secretpage">
-    <h1 id = "secret" >You Found A Secret Good Job!!!</h1> 
-  </div> <!-- Secret                                                 -->
   <div id = "jsid">
-   <noscript>
-    <div style="position: fixed; top: 0px; left: 0px; z-index: 3000; 
-                height: 100%; width: 100%; background-color: #FFFFFF">
-        <p style="margin-left: 10px">JavaScript is not enabled. Please Enable JavaScript.</p>
-    </div>
-</noscript>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $("#load").show();
-$("#home, #navbar, #videopage, #profile, #text2, #secretpage, #secretbtn, #codepage").hide();
+$("#home, #page2, #page3, #page4, #page5, #page6").hide();
 
 $("#button").on("click", function(){
 $("#load").hide();
-$("#home, #navbar").show();
-setTimeout(myFunction, 1000)
-setTimeout(secretstart, 1000)
-})
-
-$("#button2").on("click", function(){
-$("#videopage, #profile, #secretpage, #codepage").hide();
 $("#home").show();
 })
-$("#videos").on("click", function(){
-$("#home, #profile, #secretpage, #codepage").hide();
-$("#videopage").show();
 
-})
 $("#button22").on("click", function(){
-$("#home, #profile, #secretpage, #codepage").hide();
-$("#videopage").show();
-
-})
-$("#profilebtn").on("click", function(){
-$("#home, #videopage, #secretpage, #codepage").hide();
-$("#profile").show();
-
+$("#home").hide();
+$("#page2").show();
 })
 $("#button44").on("click", function(){
-$("#home, #videopage, #secretpage, #codepage").hide();
-$("#profile").show();
-
+$("#page2").hide();
+$("#page3").show();
 })
-$("#button66").on("click", function(){
-$("#home, #videopage, #secretpage, #profile, #secretpage").hide();
-$("#codepage").show();
 
-})
-$("#secretbtn").on("click", function(){
-$("#home, #videopage, #secretpage, #profile, #codepage").hide();
-$("#secretpage").show();
-
-})
-$("#codebtn").on("click", function(){
-$("#home, #videopage, #secretpage, #profile, #secretpage").hide();
-$("#codepage").show();
-
-})
-function myFunction() {
-  $("#text1").hide();
-  $("#text2").show();
-  setTimeout(myFunction2, 1000)
+$("#password").keypress(function(){
+if (event.key == "Enter") {
+if ($("#password").val() == "clovenbob") {
+$("#page3").hide();
+$("#page4").show();
+setTimeout(back, 3000)
 }
-function myFunction2() {
-  $("#text2").hide();
-  $("#text1").show();
-  setTimeout(myFunction, 1000)
+}})
+function back()     {
+$("#page4").hide();
+$("#home").show();
 }
-function secretstart() {
-    $("#secretbtn").hide();
-    setTimeout(secretend, 2000)
+$("#code123").keypress(function(){
+if (event.key == "Enter") {
+if ($("#code123").val() == "code123") {
+$("#home").hide();
+$("#page5").show();
 }
-function secretend() {
-    $("#secretbtn").show();
-    setTimeout(secretstart, 500)
+}})
+if ( Boolean(change) == true) {
+$("#page6").show();
+$("#home, #page2, #page3, #page4, #page5, #load").hide();
 }
-
 </script>
 </div> <!-- JavaScript                                             -->
   
