@@ -13,6 +13,12 @@
                 box-sizing: border-box;
                 text-align:center;
             }
+ 
+
+#footer {
+position:fixed;bottom:0;
+font-family: helvetica, arial;
+}
 body{
 font-family: arial,helvetica;
 }
@@ -280,9 +286,19 @@ Escape
 </a>
 </div>
     </div> <!-- Projectspage                                           -->
+ <div id = "footer1">
+   <h6 id = "footer"></h6>  
+  </div> <!-- Footer                                                 -->
   <div id = "jsid">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+ function copyright() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("footer").innerHTML = "&copy 2020-" + n + " Clovenbob";
+}
+copyright();
+
 $("#load").show();
 $("#home, #navbar, #videopage, #profile, #text2, #secretpage, #secretbtn, #codepage").hide();
 
